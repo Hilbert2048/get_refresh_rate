@@ -16,8 +16,9 @@ class MethodChannelGetRefreshRate extends GetRefreshRatePlatform {
   }
 
   @override
-  Future<double> getRefreshRate() async {
-    final fpsHz = await methodChannel.invokeMethod<double>('getRefreshRate');
+  Future<int> getRefreshRate() async {
+    final fpsHz = await methodChannel.invokeMethod<int>('getRefreshRate');
+    assert(fpsHz != null);
     return fpsHz ?? 60;
   }
 }

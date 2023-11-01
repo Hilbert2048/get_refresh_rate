@@ -6,7 +6,9 @@ class GetRefreshRate {
   }
 
   /// 默认为60帧，以手机的实际刷新帧率为准
-  Future<double>  getRefreshRate() async {
+  Future<int> getRefreshRate() async {
     return GetRefreshRatePlatform.instance.getRefreshRate();
   }
 }
+
+

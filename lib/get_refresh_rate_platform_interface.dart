@@ -27,7 +27,7 @@ abstract class GetRefreshRatePlatform extends PlatformInterface {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 
-  Future<double> getRefreshRate() {
+  Future<int> getRefreshRate() {
     throw UnimplementedError('getRefreshRate() has not been implemented.');
   }
 }

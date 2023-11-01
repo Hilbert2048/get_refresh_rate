@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-            child: FutureBuilder<double>(
+            child: FutureBuilder<int>(
               future: GetRefreshRate().getRefreshRate(),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {

@@ -12,7 +12,7 @@ class MockGetRefreshRatePlatform
   Future<String?> getPlatformVersion() => Future.value('42');
 
   @override
-  Future<double> getRefreshRate() {
+  Future<int> getRefreshRate() {
     // TODO: implement getRefreshRate
     throw UnimplementedError();
   }

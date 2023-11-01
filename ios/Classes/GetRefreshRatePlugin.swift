@@ -11,7 +11,7 @@ public class GetRefreshRatePlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
     case "getRefreshRate":
-      result(Double(UIScreen.main.maximumFramesPerSecond))
+      result(UIScreen.main.maximumFramesPerSecond)
     default:
       result(FlutterMethodNotImplemented)
     }

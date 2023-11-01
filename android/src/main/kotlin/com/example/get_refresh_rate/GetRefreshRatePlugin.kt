@@ -26,7 +26,7 @@ class GetRefreshRatePlugin: FlutterPlugin, MethodCallHandler {
       try {
         val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
         val refreshRate = windowManager.defaultDisplay.refreshRate
-                result.success(refreshRate)
+                result.success(refreshRate.toInt())
       } catch (e: Exception) {
         result.success(null)
       }
